@@ -11,7 +11,7 @@ var hours = d.getHours();
 var minutes = d.getMinutes();
 var seconds = d.getSeconds();
 var milliseconds = d.getMilliseconds();
-var timeColon = ":"
+var timeColon = ":";
 var time = hours.concat(timeColon).concat(minutes).concat(timeColon).concat(seconds);
 
 // date-time.js functions
