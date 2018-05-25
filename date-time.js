@@ -45,7 +45,7 @@ var quartFullTime = quartFullHours.concat(quartFullMinutes).concat(quartFullSeco
 var halfFullHours = hours.concat("hr").concat(space);
 var halfFullMinutes = minutes.concat("min").concat(space);
 var halfFullSeconds = seconds.concat("sec").concat(space);
-var halfFullMilliseconds = milliseconds.concat("milsec").concat(space);
+var halfFullMilliseconds = milliseconds.concat("msec").concat(space);
 var halfFullTime = halfFullHours.concat(halfFullMinutes).concat(halfFullSeconds);
 
 // full-time.js
@@ -68,7 +68,10 @@ var textTime = textHours.concat(textMinutes).concat(textSeconds);
 var textMsTime = textTime.concat(textMilliseconds);
 
 // ms-time.js
-var msTime = time.concat(milliseconds);
+var msTime = time.concat(colon).concat(milliseconds);
+
+// quart-full-ms-time.js
+var quartFullMsTime = quartFullHours.concat(quartFullMinutes).concat(quartFullSeconds).concat(quartFullMilliseconds);
 
 // half-full-ms-time.js
 var halfFullMsTime = halfFullTime.concat(halfFullMilliseconds);
@@ -92,9 +95,13 @@ var fullDateFullTime = fullTime.concat(space).concat(fullDate);
 console.log("date ".concat(date));
 console.log("fullDate ".concat(fullDate));
 console.log("time ".concat(time));
+console.log("quartFullTime ".concat(quartFullTime));
 console.log("halfFullTime ".concat(halfFullTime));
 console.log("fullTime ".concat(fullTime));
+console.log("textTime ".concat(textTime));
+console.log("textMsTime ".concat(textMsTime));
 console.log("msTime ".concat(msTime));
+console.log("quartFullMsTime ".concat(quartFullMsTime));
 console.log("halfFullMsTime ".concat(halfFullMsTime));
 console.log("fullMsTime ".concat(fullMsTime));
 console.log("dateTime ".concat(dateTime));
